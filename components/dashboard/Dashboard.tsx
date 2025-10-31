@@ -18,6 +18,13 @@ import * as React from 'react';
 
 const COLORS = ['#0F766E', '#D4A373', '#22C55E', '#0EA5E9', '#EF4444', '#6366F1'];
 
+interface MetricCardProps {
+  icon?: React.ReactNode;
+  label: string;
+  value: string;
+  sub?: string;
+}
+
 export function Dashboard() {
   const [mounted, setMounted] = React.useState(false);
   const [series, setSeries] = React.useState<Array<{ date: string; volume: number; count: number; successRate: number }>>([]);
@@ -245,7 +252,7 @@ export function Dashboard() {
   );
 }
 
-function MetricCard({ icon, label, value, sub }: { icon?: React.ReactNode; label: string; value: string; sub?: string }) {
+function MetricCard({ icon, label, value, sub }: MetricCardProps) {
   return (
     <Card>
       <CardHeader>
