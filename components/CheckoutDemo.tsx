@@ -133,7 +133,7 @@ export const CheckoutDemo: React.FC = () => {
           <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-red-700 text-sm">{error}</div>
         )}
 
-        <Button onClick={handleDonate} disabled={loading} className="w-full bg-emerald-600 hover:bg-emerald-700 text-white" size="lg">
+        <Button onClick={handleDonate} disabled={loading} className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
           {loading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
