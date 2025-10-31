@@ -15,3 +15,6 @@ yarn-error.log*
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Private files
+MESSAGE_TO_CEO.md
