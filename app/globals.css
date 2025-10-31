@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pg-primary: #0F766E;
+  --pg-accent: #D4A373;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-feature-settings: "case" 1, "rlig" 1, "calt" 0;
+}
+
