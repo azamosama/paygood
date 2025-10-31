@@ -245,11 +245,14 @@ export function Dashboard() {
   );
 }
 
-function MetricCard({ label, value, sub }: { label: string; value: string; sub?: string }) {
+function MetricCard({ icon, label, value, sub }: { icon?: React.ReactNode; label: string; value: string; sub?: string }) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{label}</CardTitle>
+        <div className="flex items-center gap-2">
+          {icon}
+          <CardTitle>{label}</CardTitle>
+        </div>
       </CardHeader>
       <CardContent>
         <div className="text-2xl font-semibold">{value}</div>
